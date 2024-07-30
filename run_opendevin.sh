@@ -16,6 +16,7 @@ docker run -it \
     -e LLM_MODEL="openai/<your-model-name-from-lm-studio>" \
     -e LLM_BASE_URL="http://host.docker.internal:1234/v1" \
     -e CUSTOM_LLM_PROVIDER="openai" \
+    -e LLM_API_KEY="lm-studio" \
     -e PERSIST_SANDBOX=$PERSIST_SANDBOX \
     -e SSH_PASSWORD=$SSH_PASSWORD \
     -e WORKSPACE_MOUNT_PATH=$WORKSPACE_BASE \
