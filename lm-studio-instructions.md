@@ -102,11 +102,12 @@
 17. Under Resources -> WSL integration:
 18. look for "Enable integration with additional distros:".
 19. Enable Debian by clicking on the slider.
-20. Now run the bash script created earlier. Assuming the script is named "run_opendevin.sh"
-21. run the following command in a Windows Terminal, cd to the folder that contains it:
+20. Now run the bash script created earlier. Assuming the script is named "run_opendevin_lm-studio.sh"
+21. run the following command in a wsl, cd to the folder that contains it:
 
     ```bash
-    wsl -e ./run_opendevin.sh
+    cd /mnt/c/......../devin
+    ./run_opendevin_lm-studio.sh
     ```
 
 22. At this point, since it's the first time the script is run, the Docker OpenDevin image will be downloaded
