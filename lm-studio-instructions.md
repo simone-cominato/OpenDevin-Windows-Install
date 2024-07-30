@@ -113,7 +113,10 @@
 22. At this point, since it's the first time the script is run, the Docker OpenDevin image will be downloaded
 23. Each subsequent invocation of the script will run the locally downloaded image.
 24. Once the Docker image is running, the OpenDevin GUI can be accessed by pointing your web browser to:
-     - [http://localhost:3000](http://localhost:3000).
+     - [http://localhost:3000](http://localhost:3000)
+     - you will be asked for model and api:
+     - for model input `openai/<your-lm-model-name-from-local-server-python-example>`
+     - for api input `lm-studio`
 
 More documentation can be found here:
 - [OpenDevin GitHub page](https://github.com/OpenDevin/OpenDevin)
