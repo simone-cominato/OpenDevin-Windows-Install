@@ -90,23 +90,28 @@
 
 10. in windows edit .wslconfig file in your user folder
 11. append `networkingMode=mirrored`
-12. in powershell run `wsl --shutdown`
-13. docker will ask to restart press ok and restart
-14. Open Docker Desktop
-15. click on the gear icon in the top right corner.
-16. Under Resources -> WSL integration:
-17. look for "Enable integration with additional distros:".
-18. Enable Debian by clicking on the slider.
-19. Now run the bash script created earlier. Assuming the script is named "run_opendevin.sh"
-20. run the following command in a Windows Terminal, cd to the folder that contains it:
+    - should look like this:
+      ```
+      [wsl2]
+      networkingMode=mirrored
+      ```
+13. in powershell run `wsl --shutdown`
+14. docker will ask to restart press ok and restart
+15. Open Docker Desktop
+16. click on the gear icon in the top right corner.
+17. Under Resources -> WSL integration:
+18. look for "Enable integration with additional distros:".
+19. Enable Debian by clicking on the slider.
+20. Now run the bash script created earlier. Assuming the script is named "run_opendevin.sh"
+21. run the following command in a Windows Terminal, cd to the folder that contains it:
 
     ```bash
     wsl -e ./run_opendevin.sh
     ```
 
-21. At this point, since it's the first time the script is run, the Docker OpenDevin image will be downloaded
-22. Each subsequent invocation of the script will run the locally downloaded image.
-23. Once the Docker image is running, the OpenDevin GUI can be accessed by pointing your web browser to:
+22. At this point, since it's the first time the script is run, the Docker OpenDevin image will be downloaded
+23. Each subsequent invocation of the script will run the locally downloaded image.
+24. Once the Docker image is running, the OpenDevin GUI can be accessed by pointing your web browser to:
      - [http://localhost:3000](http://localhost:3000).
 
 More documentation can be found here:
